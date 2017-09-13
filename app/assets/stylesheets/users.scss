@@ -3,6 +3,8 @@ body {
   background-color: #f99034;
 }
 
+
+// NAME -- TITLE --
 .header {
   text-align: center;
   width: 100%;
@@ -11,13 +13,31 @@ body {
   color: white;
 }
 
+.githubHeader{
+  margin-right: 20px;
+}
+
+.emailHeader{
+  margin-right: 20px;
+}
+
+.linkedinHeader{
+  margin-right: 20px;
+}
+
+#headerText > i {
+  margin-top: 60px;
+  margin-right: 20px;
+}
+
+// PADDING FROM TOP FOR MATTHEW LOMBANA
 #headerText {
   padding-top: 300px;
 }
 
+
 h1 {
   font-size: 450%;
-  
 }
 
 h2 {
@@ -28,16 +48,56 @@ h5 {
   font-size: 200%;
   margin-top: 70px;
 }
-.body{
-  text-align: center;
+
+a:link {
+  color: white;
+}
+
+a:hover {
+  color: blue;
+}
+
+// GITHUB ICON
+#headerText > a.githubHeader > i{
+  color: white;
+}
+#headerText > a.githubHeader > i:hover{
+  color: blue;
+}
+
+
+// PROJECTS AND MORE
+.projectWrapper{
+  // text-align: center;
   margin-top: 20px;
   width: 100%;
   height: 2000px;
   background-color: #fff
 }
 
-@font-face {
-  font-family: 'Montserrat', sans-serif;
-  src:url('/assets/Montserrat');
+.ProjectOne {
+  background-color: grey;
+  width: 80%;
+  height: 300px;
+  margin-left: 140px;
+  color: white;
 
+}
+
+
+footer {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.githubFooter{
+  margin-right: 20px;
+}
+
+.emailFooter{
+  margin-right: 20px;
+}
+
+.linkedinFooter {
+  margin-right: 20px;
 }
