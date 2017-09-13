@@ -11,6 +11,7 @@ body {
   height: 800px;
   background-color: #f99034;
   color: white;
+
 }
 
 .githubHeader{
@@ -32,7 +33,7 @@ body {
 
 // PADDING FROM TOP FOR MATTHEW LOMBANA
 #headerText {
-  padding-top: 300px;
+  padding-top: 200px;
 }
 
 
@@ -54,7 +55,7 @@ a:link {
 }
 
 a:hover {
-  color: blue;
+  color: #273135;
 }
 
 // GITHUB ICON
@@ -62,7 +63,7 @@ a:hover {
   color: white;
 }
 #headerText > a.githubHeader > i:hover{
-  color: blue;
+  color: #273135;
 }
 
 
@@ -84,10 +85,18 @@ a:hover {
 
 }
 
+.contactForm{
+
+}
+
+#submit {
+margin-left: 150px;
+}
 
 footer {
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .githubFooter{
