@@ -26,6 +26,15 @@ body {
   margin-right: 20px;
 }
 
+#arrowButton {
+  margin-right: 20px;
+  color: white;
+}
+
+#arrowButton:hover {
+  color: #273135;
+}
+
 #headerText > i {
   margin-top: 60px;
   margin-right: 20px;
@@ -34,6 +43,10 @@ body {
 // PADDING FROM TOP FOR MATTHEW LOMBANA
 #headerText {
   padding-top: 200px;
+}
+
+#projectTitle{
+  text-align: center;
 }
 
 
