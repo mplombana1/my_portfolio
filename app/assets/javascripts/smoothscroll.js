@@ -1,12 +1,13 @@
-// $(document).ready(function() {
-//   $('.slideButton').click(function() {
-//     alert('Clicked.');
-//   });
-//
-// });
-
 $(document).ready(function() {
- $('body').on('click', '.slideButton', function() {
-  alert('Clicked.');
- });
+  $('.slideButton').click(function(e) {
+
+    var linkHref = $(this).attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(linkHref).offset().top
+    });
+
+    e.preventDefault();
+  });
+
 });

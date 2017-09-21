@@ -14,9 +14,13 @@
     <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
     <br><br>
 
-    <%= link_to("#projects")  do %>
-      <i class="fa fa-arrow-circle-down fa-4x" aria-hidden="true" id="arrowButton" class="slideButton"></i>
-    <% end %>
+    <div class="slideButton">
+      <%= link_to("#projects")  do %>
+        <i class="fa fa-arrow-circle-down fa-4x" aria-hidden="true" id="arrowButton" class="slideButton"></i>
+      <% end %>
+
+    </div>
+
 
   </div>
 </div>
@@ -31,10 +35,9 @@
           <div class="title">GitInIt</div>
           <div class="type">Event Purchaser</div>
           <div class="tech">Ruby on Rails, Javascript, HTML/CSS, Stripe, Google Locations</div>
-          <div class="description">Paleo scenester tofu vexillologist, blue bottle chillwave adaptogen unicorn
-            subway tile you probably haven't heard of them williamsburg yr.
-             Chartreuse pop-up fingerstache +1 celiac tattooed. Mlkshk farm-to-table kombucha
-            health goth vexillologist, hoodie fashion axe ethical readymade man bun kogi taiyaki vape. </div>
+          <div class="description">GitInIt is a mobile first web application that lets users signup,
+             find local venues using Google's Geolocation and purchase entry tickets using the swipe API.
+             Venues are able to create a profile page, create events and have a checklist of users that have purchased tickets. </div>
         </div>
 
         <form action="https://github.com/mplombana1/GitInIt_app">
@@ -46,13 +49,10 @@
     <div class="projectBox">
       <img src="/assets/drumkit.png" alt=""class="float-right" id="img2">
         <div class="textBox">
-          <div class="title">GitInIt</div>
-          <div class="type">Event Purchaser</div>
-          <div class="tech">Ruby on Rails, Javascript, HTML/CSS, Stripe, Google Locations</div>
-          <div class="description">Paleo scenester tofu vexillologist, blue bottle chillwave adaptogen unicorn
-            subway tile you probably haven't heard of them williamsburg yr.
-             Chartreuse pop-up fingerstache +1 celiac tattooed. Mlkshk farm-to-table kombucha
-            health goth vexillologist, hoodie fashion axe ethical readymade man bun kogi taiyaki vape. </div>
+          <div class="title">Javascript Drumkit</div>
+          <div class="type">A web drumkit</div>
+          <div class="tech">HTML, CSS, Javascript</div>
+          <div class="description">This is a simple web drumkit that I created to help me brush up on my Javascript. </div>
         </div>
 
         <form action="https://github.com/mplombana1/drumkit_javascript">
@@ -63,13 +63,10 @@
     <div class="projectBox">
       <img src="/assets/javaclock.png" alt=""class="float-right" id="img3">
         <div class="textBox">
-          <div class="title">GitInIt</div>
-          <div class="type">Event Purchaser</div>
-          <div class="tech">Ruby on Rails, Javascript, HTML/CSS, Stripe, Google Locations</div>
-          <div class="description">Paleo scenester tofu vexillologist, blue bottle chillwave adaptogen unicorn
-            subway tile you probably haven't heard of them williamsburg yr.
-             Chartreuse pop-up fingerstache +1 celiac tattooed. Mlkshk farm-to-table kombucha
-            health goth vexillologist, hoodie fashion axe ethical readymade man bun kogi taiyaki vape. </div>
+          <div class="title">Javascript Clock</div>
+          <div class="type">A realtime clock based on location</div>
+          <div class="tech">HTML, CSS, Javascript</div>
+          <div class="description">This is a clock created to home in on my Javascript skills. It uses the time on your computer to make a working moveable clock using CSS to move the three hands. </div>
         </div>
 
         <form action="https://github.com/mplombana1/clock_javascript">
@@ -80,13 +77,10 @@
     <div class="projectBox">
       <img src="/assets/protfolio.png" alt=""class="float-right" id="img4">
         <div class="textBox">
-          <div class="title">GitInIt</div>
-          <div class="type">Event Purchaser</div>
-          <div class="tech">Ruby on Rails, Javascript, HTML/CSS, Stripe, Google Locations</div>
-          <div class="description">Paleo scenester tofu vexillologist, blue bottle chillwave adaptogen unicorn
-            subway tile you probably haven't heard of them williamsburg yr.
-             Chartreuse pop-up fingerstache +1 celiac tattooed. Mlkshk farm-to-table kombucha
-            health goth vexillologist, hoodie fashion axe ethical readymade man bun kogi taiyaki vape. </div>
+          <div class="title">Portfolio</div>
+          <div class="type">Personal Website</div>
+          <div class="tech">Ruby on Rails, jQuery, HTML/CSS</div>
+          <div class="description">A portfolio website to demonstrate my skills using Ruby on Rails and present the type of projects I have worked on. </div>
         </div>
 
         <form action="https://github.com/mplombana1/my_portfolio">
@@ -112,3 +106,22 @@
   <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
 
 </footer>
+
+<script>
+
+$(document).ready(function() {
+  $('.slideButton').click(function(e) {
+
+    var linkHref = $(this).attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(linkHref).offset().top
+    });
+
+    e.preventDefault();
+  });
+
+});
+
+
+</script>
