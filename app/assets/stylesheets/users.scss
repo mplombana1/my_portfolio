@@ -1,6 +1,12 @@
 body {
   height: 3000px;
-  background-color: #f99034;
+  // background-color: #f99034;
+  // background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  // background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 2000%);
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 2000%);
+  // background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 2000%);
+  font-family: "Montserrat";
+
 }
 
 
@@ -9,8 +15,14 @@ body {
   text-align: center;
   width: 100%;
   height: 800px;
-  background-color: #f99034;
+  // background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  // background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  // background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+
   color: white;
+
+  font-family: "Montserrat";
 
 }
 
@@ -24,11 +36,14 @@ body {
 
 .linkedinHeader{
   margin-right: 20px;
+  color: white;
 }
 
 #arrowButton {
   margin-right: 20px;
+  margin-top: 20px;
   color: white;
+
 }
 
 #arrowButton:hover {
@@ -44,11 +59,6 @@ body {
 #headerText {
   padding-top: 200px;
 }
-
-#projectTitle{
-  text-align: center;
-}
-
 
 h1 {
   font-size: 450%;
@@ -81,45 +91,100 @@ a:hover {
 
 
 // PROJECTS AND MORE
+
+#projects {
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 70px;
+  font-size: 300%;
+  color: #4c4c4c;
+}
+
+// THE PROJECT BOXES AND THE CONTENTS INSIDE
 .projectWrapper{
   // text-align: center;
   margin-top: 20px;
   width: 100%;
   height: 2000px;
-  background-color: #fff
+  background-color: #ededed;
+
 }
 
-.ProjectOne {
-  background-color: grey;
+.projectBox{
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
   width: 80%;
-  height: 300px;
+  height: 350px;
   margin-left: 140px;
+  color: black;
+  margin-bottom: 80px;
+}
+
+#img1{
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.button{
+  margin-top: 50px;
+  margin-left: 500px;
+  height: 50px;
+  width: 100px;
+  background-color: #ededed;
+  font-weight: bold;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #bcbaba;
+}
+
+.button:hover {
+  background-color: #273135;
   color: white;
-
 }
 
-.contactForm{
+// TEXT INSIDE PROJECT BOXES
 
+.textBox {
+  margin-left: 30px;
+  color: #4c4c4c;
 }
 
-#submit {
-margin-left: 150px;
+.title {
+  font-size: 250%;
+  margin-top: 20px;
 }
 
+.type {
+  font-size: 130%;
+}
+
+.description {
+  font-size: 80%;
+  margin-top: 20px;
+}
+
+// THE FOOTER AND THE FONT AWESOME LINKS
 footer {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
+
 }
 
 .githubFooter{
   margin-right: 20px;
+  color: white;
 }
 
 .emailFooter{
   margin-right: 20px;
+  color: white;
 }
 
 .linkedinFooter {
   margin-right: 20px;
+  color: white;
 }
