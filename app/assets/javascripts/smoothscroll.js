@@ -1,8 +1,12 @@
+// $(document).ready(function() {
+//   $('.slideButton').click(function() {
+//     alert('Clicked.');
+//   });
+//
+// });
+
 $(document).ready(function() {
-  $('.slideButton').click(function() {
-    alert('Clicked.');
-  });
-
+ $('body').on('click', '.slideButton', function() {
+  alert('Clicked.');
+ });
 });
-
-console.log('hello')
