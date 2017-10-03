@@ -15,7 +15,7 @@
     <br><br>
 
     <div class="slideButton">
-      <%= link_to("#projects")  do %>
+      <%= link_to("#projects", id: "smooth")  do %>
         <i class="fa fa-arrow-circle-down fa-4x" aria-hidden="true" id="arrowButton" class="slideButton"></i>
       <% end %>
 
@@ -28,7 +28,7 @@
 
 
 <div class="projectWrapper">
-  <h1 id="projects" >Projects</h1>
+  <h1 id="projects" id:"smooth" >Projects</h1>
     <div class="projectBox">
       <img src="/assets/gitinit.png" alt=""class="float-right" id="img1">
         <div class="textBox">
@@ -109,19 +109,19 @@
 
 <script>
 
-$(document).ready(function() {
-  $('.slideButton').click(function(e) {
-
-    var linkHref = $(this).attr('href');
-
-    $('html, body').animate({
-      scrollTop: $(linkHref).offset().top
-    });
-
-    e.preventDefault();
-  });
-
-});
+// $(document).ready(function() {
+//   $('.slideButton').click(function(e) {
+//
+//     var linkHref = $(this).attr('href');
+//
+//     $('html, body').animate({
+//       scrollTop: $(linkHref).offset().top
+//     });
+//
+//     e.preventDefault();
+//   });
+//
+// });
 
 
 </script>
